@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sift</string>
+    <string name="main_sift_tab_title">Sift</string>
+    <string name="main_list_tab_title">List</string>
+    <string name="main_scan_tab_title">Scan</string>
+    <string name="user_photo_content_description">User Photo</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
