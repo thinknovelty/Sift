@@ -1,12 +1,20 @@
-package think.novelty.sift;
+package think.novelty.objects;
 
-public class UserInfo {
+public class UserObject {
 	private String mFirstName;
 	private String mLastName;
 	
-	public UserInfo() {
-		mFirstName = "";
-		mLastName = "";
+	public UserObject() {
+		init("", "");
+	}
+	
+	public UserObject(String firstName, String lastName) {
+		init(firstName, lastName);
+	}
+	
+	public void init(String firstName, String lastName) {
+		setFirstName(firstName);
+		setLastName(lastName);
 	}
 	
 	public void setFirstName(String firstName) {
@@ -15,11 +23,6 @@ public class UserInfo {
 	
 	public void setLastName(String lastName) {
 		mLastName = lastName;
-	}
-	
-	public void setName(String firstName, String lastName) {
-		setFirstName(firstName);
-		setLastName(lastName);
 	}
 	
 	public String getFirstName() {

@@ -1,5 +1,9 @@
-package think.novelty.sift;
+package think.novelty.fragments;
 
+import think.novelty.sift.R;
+import think.novelty.sift.R.id;
+import think.novelty.sift.R.layout;
+import think.novelty.sift.R.string;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

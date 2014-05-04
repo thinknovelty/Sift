@@ -1,18 +1,18 @@
-package think.novelty.sift;
+package think.novelty.fragments;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-import think.novelty.adapters.MainListAdapter;
-import android.content.Context;
+import think.novelty.adapters.ListListAdapter;
+import think.novelty.objects.UserObject;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ListView;
 
 public class FragmentListTab extends ListFragment {
-	private MainListAdapter mAdapter;
+	private ListListAdapter mAdapter;
 
 	public FragmentListTab() {
 	}
@@ -22,18 +22,16 @@ public class FragmentListTab extends ListFragment {
 		super.onCreate(savedInstanceState);
 		
 		// Temporarily create dummy data
-		UserInfo user1 = new UserInfo();
-		UserInfo user2 = new UserInfo();
-		
-		user1.setName("Bobby", "DeArmond");
-		user2.setName("Gary", "Roberts");
-		List<UserInfo> users = new ArrayList<UserInfo>();
+		UserObject user1 = new UserObject("Bobby", "DeArmond");
+		UserObject user2 = new UserObject("Gary", "Roberts");
+
+		List<UserObject> users = new ArrayList<UserObject>();
 		users.add(user1);
 		users.add(user2);
 		
 		// Setup the adapter
-		mAdapter = new MainListAdapter(getActivity(), users);
-		this.setListAdapter(mAdapter);
+		mAdapter = new ListListAdapter(getActivity(), users);
+		setListAdapter(mAdapter);
 	}
 	
 	@Override

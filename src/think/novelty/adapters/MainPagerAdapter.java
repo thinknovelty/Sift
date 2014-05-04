@@ -2,9 +2,9 @@ package think.novelty.adapters;
 
 import java.util.Locale;
 
-import think.novelty.sift.FragmentListTab;
-import think.novelty.sift.FragmentScanTab;
-import think.novelty.sift.FragmentSiftTab;
+import think.novelty.fragments.FragmentListTab;
+import think.novelty.fragments.FragmentScanTab;
+import think.novelty.fragments.FragmentSiftTab;
 import think.novelty.sift.R;
 import android.content.Context;
 import android.support.v4.app.Fragment;
